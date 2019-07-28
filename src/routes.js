@@ -8,6 +8,7 @@ const routes = new Router();
 
 routes.post('/users', UserController.store);
 routes.post('/session', SessionController.store);
+
 // Fez um middleware global que serve para as rotas apos o use
 routes.use(authMiddleware);
 
