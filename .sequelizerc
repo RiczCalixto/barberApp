@@ -5,7 +5,6 @@ module.exports = {
   'models-path': resolve(__dirname, 'src', 'app', 'models'),
   'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
   'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
-}
+};
 
 // Exporta os caminhos que estão os arquivos e pastas da aplicação (MVC, migrations, etc)
-
