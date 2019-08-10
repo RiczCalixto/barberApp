@@ -10,7 +10,7 @@ class ScheduleController {
     });
     if (!checkIfUser) {
       return res.status(400).json({
-        error: 'Sorry, but you must be a provider to access schedules',
+        error: 'Sorry, 🐱 but you must be a provider to access schedules',
       });
     }
 
