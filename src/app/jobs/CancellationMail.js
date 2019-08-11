@@ -12,6 +12,7 @@ class CancellationMail {
   // tarefa que irá executar quando o processo for executado (handle é chamado no envio de cada e-mail)
   async handle({ data }) {
     const { appointment } = data;
+
     await Mail.sendMail({
       to: `${appointment.provider.name} <${appointment.provider.email}>`,
       subject: 'Agendamento cancelado',
